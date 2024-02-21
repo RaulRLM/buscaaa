@@ -1,0 +1,53 @@
+@import "estilos.css";
+:root{
+    --color-fons1: hsl(138, 78%, 68%);
+    --color-fons2: hsl(75, 73%, 65%);
+    --color-boto1: #007F5F;
+    --color-boto2: #FFFF3F;
+
+    --color-titol: #b22222;
+
+    --color-reflexe-taulell: #DDDF00;
+    --color-ombra-taulell: #2B9348;
+    --color-taulell: #80B918;
+
+    --ombra-text: #007F5F;
+
+    --color-estado: #EEEF20;
+    --color-text-generar: #000;
+    --color-ombra-generar: #0b765b;
+
+    --color-fons-mina: #e4ff1a;
+
+    --vecinas1: #fe63ac;
+    --vecinas2: #ff99e9;
+    --vecinas3: #00d4ff;
+    --vecinas4: #0f3;
+    --vecinas5: #cf0;
+    --vecinas6: #fc0;
+    --vecinas7: #f30;
+    --vecinas8: #600;
+}
+
+body {
+    
+    background: var(--color-fons1);
+    background: linear-gradient(90deg, var(--color-fons1) 0%, var(--color-fons2) 100%);
+    background: -moz-linear-gradient(90deg, var(--color-fons1) 0%, var(--color-fons2) 100%);
+    background: -webkit-linear-gradient(90deg, var(--color-fons1) 0%, var(--color-fons2) 100%);
+    background-attachment: fixed;
+    background-size: cover; /* Hace que la imagen cubra toda el área disponible */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para ajustar la imagen a la anchura y altura del contenedor */
+    z-index: 1; /* Para asegurarse de que la imagen esté sobre el color de fondo */
+}
